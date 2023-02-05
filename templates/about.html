@@ -2,10 +2,49 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
  <title>My Website - About</title>
 </head>
 <body>
- <h1>Jamila McGowan</h1>
- <p> &nbsp &nbsp&nbsp&nbsp&nbsp A 20-year-old multifaceted young woman. She is pursuing a BSc. Actuarial Science at the University of West Indies, Mona. In and out of the typical school environment, she finds more interest in learning computing skills like coding or Web Development over Mathematics. <i>The irony!</i> However, her other interest includes but are not limited to cooking, eating, crocheting and watching movies. After completing INFO3180, my goal is that I would have grasped the course, be more adept in web development, and have fun while doing so.   </p>
+<div class="container">
+    <header>
+        <img class="himg" src= "{{ url_for('static', filename='image1.png')}} " atl="info3180 lab 1image 1">
+        <h1>Jamila McGowan</h1>
+    </header>
+
+   <!-- <div class="spacer"></div>-->
+
+    <main>
+        
+        <img class="mimg"src= "{{ url_for('static', filename='image2.jpg')}} " atl="info3180 lab 1image 2">
+        <p> &nbsp &nbsp&nbsp&nbsp&nbsp A 20-year-old multifaceted young woman. She is pursuing a BSc. Actuarial Science at the University of West Indies, Mona. In and out of the typical school environment, she finds more interest in learning computing skills like coding or Web Development over Mathematics. <i>The irony!</i> However, her other interest includes but are not limited to cooking, eating, crocheting and watching movies. After completing INFO3180, my goal is that I would have grasped the course, be more adept in web development, and have fun while doing so.</p>
+
+    </main>
+
+    <aside>
+       <section>
+        <h3> Social Media</h3>
+        <ul>
+            <li>
+                <a href = "https://www.instagram.com/?hl=en">Instagram </a>
+            </li>
+            <li>
+                <a href = "https://www.tiktok.com">Tiktok </a>
+            </li>
+            <li>
+                <a href = "https://www.linkedin.com">Lindedin </a>
+            </li>
+            <li>
+                <a href = "https://www.youtube.com/index">Youtube </a>
+            </li>
+        </ul>
+
+       </section> 
+    </aside>
+
+    <footer>
+        <p>Copyright &copy; 2022, Jamila McGowan</p>
+    </footer>
+</div>
 </body>
 </html>
